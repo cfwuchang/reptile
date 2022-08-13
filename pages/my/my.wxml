@@ -1,0 +1,27 @@
+<!--pages/my/my.wxml-->
+<view class="con">
+  <view class="top">
+    <image class="img" src="{{user.avatarUrl}}"></image>
+    <button bindtap="buttomHandler" wx:if="{{bool}}"></button>
+    <view class="name">{{user.nickName}}</view>
+  </view>
+  <view class="con-view" wx:if="{{user.openid==undefined?false:true}}">
+    <view class="one">
+        <text>静默搜索</text>
+        <switch checked="{{user.switch.one}}" bindchange="changeHandler" data-id="one"></switch>
+    </view>
+    <view class="two">
+        <text>开启联想搜索</text>
+        <switch checked="{{user.switch.two}}" bindchange="changeHandler" data-id="two"></switch>
+    </view>
+    <view class="three">
+        <text>开启热门搜索</text>
+        <switch checked="{{user.switch.three}}" bindchange="changeHandler" data-id="three"></switch>
+    </view>
+    <button disabled="{{(user.history==undefined ||user.history.length==0)?true:false }}" type="primary" bindtap="buttonHandler">清除搜索记录</button>
+  </view>
+  <button open-type="share" size="default">
+    点击转发给你的小伙伴把！
+  </button>
+  <footer-but class="bun"></footer-but>
+</view>

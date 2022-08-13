@@ -1,0 +1,33 @@
+<!--pages/listCom/listCom.wxml-->
+<view class="con">
+  <view class="con-top">
+    <view class="input , {{bindfocus?'bindfocus':''}}">
+      <input type="text" placeholder="搜索一下" bindfocus="bindfocus" bindinput="bindblur" bindconfirm="bindconfirm"
+        value="{{input}}" />
+      <view class="button" bindtap="bindconfirm">点击搜索</view>
+    </view>
+  </view>
+  <view class="con-com">
+    <view class="com-title" wx:for="{{com.title}}" wx:key='*this'>
+      <text>{{item}}</text>
+    </view>
+    <view class="com-body" >
+      {{com.con}}
+    </view>
+    <view class="com-btn" bindtap="urlHandler" data-title="{{com.url}}">
+    点击复制链接到剪切板
+    </view>
+    <view class="com-btn" wx:if="{{com.key}}" bindtap="keyHandler" data-key="{{com.key}}">
+    点击复制提取码到剪切板
+    </view>
+  </view>
+  <view class="list-title" wx:if="{{user.switch.two?true:false}}">猜你喜欢：</view>
+  <view class="lists" wx:if="{{user.switch.two?true:false}}">
+    <view wx:for="{{lists}}" wx:key="*this">
+    <view class="lists-title" bindtap="listHandler" data-url="{{item.url}}" data-title="{{item.title}}">
+      {{item.title}}
+    </view>
+  </view>
+  </view>
+  <footer-but class="bun"></footer-but>
+</view>

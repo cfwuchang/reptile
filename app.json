@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/my/my",
+    "pages/list/list",
+    "pages/listCom/listCom",
+    "components/footer-but/footer-but",
+    "components/select/select"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "搜搜盘",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "color": "#cccccc",
+    "selectedColor": "#f4ea2a",
+    "backgroundColor": "#f8f8f8",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "./img/icon/zhuye.png",
+        "selectedIconPath": "./img/selectedIcon/zhuye.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "./img/icon/wode.png",
+        "selectedIconPath": "./img/selectedIcon/wode.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

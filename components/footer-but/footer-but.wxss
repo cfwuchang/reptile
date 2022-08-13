@@ -1,0 +1,16 @@
+/* components/footer-but.wxss */
+.con-but{
+  text-align: center;
+  color: #ccc;
+  font-size: 22rpx;
+}
+.one,.two,.three{
+  padding: 20rpx 0;
+  display: flex;
+}
+.one text,.two text ,.three text{
+  flex: 9;
+}
+.one switch ,.two text,.three text{
+  flex: 1;
+}

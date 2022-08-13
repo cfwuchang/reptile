@@ -1,0 +1,25 @@
+<!--pages/list/list.wxml-->
+<view class="con">
+  <view class="con-top">
+    <view class="input , {{bindfocus?'bindfocus':''}}">
+      <input type="text" placeholder="搜索一下" bindfocus="bindfocus" bindinput="bindblur" bindconfirm="bindconfirm"
+        value="{{input}}" />
+    <view class="button" bindtap="bindconfirm">点击搜索</view>
+</view>
+  </view>
+  <view class="con-list">
+    <view class="list-num">总共搜索到 <text>{{list.num}}</text> 条记录</view>
+    <view class="list-list" wx:if="{{list.list!=0?true:false}}" wx:for="{{list.list}}" wx:key='*this'>
+      <view class="list-top ,{{indexs==index?'active':''}}"  bindtap="urlHandler" 
+      data-url="{{item.url}}" data-index="{{index}}" data-title="{{item.title}}">
+      {{item.title}}</view>
+      <view class="list-con" wx:for="{{item.context}}" wx:key='*this'>{{item}}</view>
+    </view>
+    <view class="list-list" wx:if="{{list.list==0?true:false}}">
+      亲！没有找到你需要的内容，换个姿势试试吧
+    </view>
+    <view class="list-list no" wx:if="{{no}}">
+      没有了哦！亲
+    </view>
+  </view>
+</view>

@@ -1,0 +1,67 @@
+/* pages/list/list.wxss */
+page{
+  background: #f8f8f8;
+}
+.con-top{
+  margin-top:30rpx ;
+}
+.input{
+  display: flex;
+  margin: auto;
+  /* align-items:center; */
+  font-size: 34rpx;
+  width: 90%;
+  height: 80rpx;
+  border: 2rpx solid #ccc;
+  border-radius: 10rpx;
+}
+.input input{
+  flex: auto;
+  padding: 20rpx;
+  text-align: left;
+}
+.bindfocus{
+  border: 2rpx solid #4FBBDB !important;
+}
+.input .button{
+  /* flex: 0.2; */
+  padding:0 10rpx ;
+  font-size: 28rpx;
+  line-height: 80rpx;
+  background: #4FBBDB;
+}
+.con-list{
+  margin: 20rpx;
+  margin: 40rpx 0;
+  overflow-y:visible
+}
+.list-num{
+  font-size: 32rpx;
+}
+.list-num text{
+  color: red;
+}
+.list-list{
+  margin:30rpx 0;
+  padding: 10rpx;
+  border-radius: 10rpx;
+  background: #ffffff;
+}
+.list-con{
+  margin-top:10rpx ;
+  font-size: 22rpx;
+}
+.list-top{
+  color: #337ab7;
+  margin: 0 10rpx ;
+  font-size: 28rpx;
+}
+.active{
+  color: pink;
+}
+.no{
+  font-size: 34rpx;
+  margin: 30rpx 0;
+  text-align: center;
+  color: #ccc;
+}

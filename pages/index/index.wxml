@@ -1,0 +1,25 @@
+<!--pages/my/my.wxml-->
+<view class="con">
+  <image class="img" src="../../img/loge.png"></image>
+  <view class="input , {{bindfocus?'bindfocus':''}}">
+  <select></select>
+  <input type="text" placeholder="搜索一下" bindfocus="bindfocus" bindinput="bindblur" bindconfirm="bindconfirm" value="{{input}}"/>
+  <view class="button" bindtap="bindconfirm">点击搜索</view>
+  </view>
+  <view class="hot" wx:if="{{user.switch.three}}">
+    <view class="hot-text"><image class="hot-img" src="/img/hot.png"></image> 热门搜索：</view>
+    <view class="hot-list" >
+    <text wx:for="{{list}}" wx:key='*this' bindtap="hotHandler" class="{{hotIndex==index?'active':''}}"
+    data-i="{{index}}" data-v="{{item}}"> {{item}} </text>
+    </view>
+  </view>
+  <view class="history" wx:if="{{!user.switch.one}}">
+    <view class="history-text"><image class="history-img" src="/img/history.png"></image> 历史搜索：</view>
+    <view class="history-list" >
+    <text wx:for="{{user.history}}" wx:key='*this' bindtap="historyHandler" class="{{historyIndex==index?'active':''}}"
+    data-i="{{index}}" data-v="{{item}}"> {{item}} </text>
+    </view>
+  </view>
+  <footer-but class="bun"></footer-but>
+
+</view>

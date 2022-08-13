@@ -1,0 +1,58 @@
+/* pages/my/my.wxss */
+page{
+  background: #f8f8f8;
+}
+.top{
+  height: 100rpx;
+  /* width: 100%; */
+  margin: 40rpx;
+  padding: 20px 0 20px 0;
+  background: #fff;
+  border-radius: 10rpx;
+  display: flex;
+}
+.top button{
+  opacity: 0;
+  position: absolute;
+  /* width: 50rpx; */
+  height: 100rpx;
+}
+.top .img{
+  width: 100rpx;
+  height: 100rpx;
+  margin:0 40rpx;
+  border-radius: 50%;
+}
+.top .name{
+  font-size: 30rpx;
+  font-weight: 900;
+  line-height: 100rpx;
+  color: #000;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.con-view{
+  padding: 20rpx;
+  margin: 20rpx;
+  /* background: #fff; */
+  font-size: 36rpx;
+}
+.arrow {
+  height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  margin-bottom:20rpx ;
+  padding-left: 20rpx;
+  border-radius: 10rpx;
+}
+.arrow image{
+  width: 54rpx;
+  height: 54rpx;
+}
+.bun .con-but{
+  position: fixed;
+  bottom:10rpx;
+}
+

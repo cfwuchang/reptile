@@ -1,0 +1,62 @@
+/* pages/listCom/listCom.wxss */
+page{
+  background: #f8f8f8;
+}
+.con-top{
+  margin-top:30rpx ;
+}
+.input{
+  display: flex;
+  margin: auto;
+  /* align-items:center; */
+  font-size: 34rpx;
+  width: 90%;
+  height: 80rpx;
+  border: 2rpx solid #ccc;
+  border-radius: 10rpx;
+}
+.input input{
+  flex: auto;
+  padding: 20rpx;
+  text-align: left;
+}
+.bindfocus{
+  border: 2rpx solid #4FBBDB !important;
+}
+.input .button{
+  /* flex: 0.2; */
+  padding:0 10rpx ;
+  font-size: 28rpx;
+  line-height: 80rpx;
+  background: #4FBBDB;
+}
+.com-body{
+  word-break:break-all; 
+}
+.con-com,.lists{
+  margin: 20rpx 30rpx;
+  padding: 20rpx;
+  border-radius: 20epx;
+  background: #fff;
+
+}
+.com-btn{
+  text-align: center;
+  padding: 10rpx;
+  margin: 20rpx auto;
+  background: #4FBBDB;
+  border-radius: 10rpx;
+}
+.list-title{
+  font-size: 34rpx;
+  font-weight: 700;
+  padding-left:20rpx ;
+}
+.lists view{
+  margin: 20rpx 0;
+  font-size: 28rpx;
+  color: #4FBBDB;
+}
+.bun .con-but{
+  margin-top: 100rpx;
+}

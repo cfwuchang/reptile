@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "footer-but":"/components/footer-but/footer-but"
+  }
+}

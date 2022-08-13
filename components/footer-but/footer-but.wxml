@@ -1,0 +1,6 @@
+<!--components/footer-but.wxml-->
+<view class="con-but">
+    <text>免责申明：本小程序所有资源采集自互联网自动爬取;本小程序不存储任何数据,仅供学习、娱乐, 制作者不付任何法律责任!</text>
+    <text>下载后请24小时内删除，原作者如果认为本小程序侵犯了您的版权，请邮箱告知我们删除!</text>
+    <view class="mail">邮箱：2511243684@qq.com</view>
+  </view>
